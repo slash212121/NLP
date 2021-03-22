@@ -29,10 +29,11 @@ This method is highly simplistic and easy to understand. However this method pos
 
 - The size of a one-hot vector is dependent on the absolute size of the corpus. The larger the size of the text is, the larger the encoded vector becomes. The size of the vector will inevitably cause computing problems when it comes to speed.(원핫벡터의 크기는 코퍼스 크기에 절대적으로 의존한다. 텍스트양이 많아지면 많아질수록, 인코딩된 벡터의 크기 또한 늘어난다. 이는 결론적으로 연산의 속도가 느려지는데 크게 기여하게 된다.)
 - One-Hot embeddings have another flaw in which they are not able to capture nuances between words as they are only comprised of 1's and 0's. To elaborate, a 'cat' and a 'tiger' can be considered as having many similarities. They both are felines, they have whiskers, etc. Yet, when your vectors look like this:
-'''
+' ' '
+
 cat = [0,0,1,0]
 tiger = [0,1,0,0]
-'''
+' ' '
 it is very difficult to tell what similarities or differences these embeddings have.(원핫코딩의 치명적인 단점은, 1과 0만으로 구성되어 있기 때문에 단어간의 공통점, 차이점을 표현하기 매우 어렵다는 것이다. '고양이'와 '호랑이'는 생각해보면 고양이족인데다 생긴 것 또한 닮은 것들이 많아, 이런 단어간 유사함이 존재함에도, 단어의 인덱스에만 의존하여 벡터를 만들었기 떄문에 이런 내포되어 있는 정보를 표현하기 힘들다.)
 
 
