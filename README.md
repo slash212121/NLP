@@ -23,7 +23,7 @@ The following methods and models have different approaches of encoding. They are
 - Considered one of the most basic forms of encoding(인코딩의 기본형으로 간주됨)
 - Any repeated words in a corpus are eliminated, thus making each unique word appear once. Note that words with different forms are considered different words. For example 'cats' and 'cat' are considered different words.(단어들의 집합에서 중복되는 단어들을 제외하여, 고유의 단어 하나만 남긴다. 한가지 주의 할것은, 완전히 똑같은 형태의 단어가 아니면 다른 단어로 처리된다는 것이다. 예를 들면 'cat'와 복수형의 'cats'은 다른 단어로 취급한다.
 - Each unique word is given a specific index. To represent a specific word, that word's index is represented with a 1, while the rest are represented as 0.(각 고유의 단어마다 인덱스가 배정이 된다. 특정 단어를 표현하기 위해, 해당되는 단어의 인덱스는 1로, 나머지는 0으로 표현이 된다.)
-![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2Fevolution-of-word-representations-in-nlp-d4483fe23e93&psig=AOvVaw2BxH6oOG_6dkx-EzdZ4qN1&ust=1616497399406000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC7x6Tgw-8CFQAAAAAdAAAAABAD)
+![alt text](https://miro.medium.com/max/674/1*9ZuDXoc2ek-GfHE2esty5A.png)
 
 This method is highly simplistic and easy to understand. However this method poses many flaws as well.(원핫인코딩은 상당히 단순하고 이해하기 쉬운 개념이다. 그러나, 많은 한계를 지니고 있다.)
 
