@@ -5,12 +5,12 @@ Main concepts of NLP and how to implement them
 - Language has several layers to analyze, and thus is highly complex.(언어는 다양한 단계및 측면에서 분석하여야 하기 때문에, 상당히 복잡한 영역이다)
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/7/79/Major_levels_of_linguistic_structure.svg)
 
-phonetics(음성론):언어자체가 어떻게 들리는지에 초점을 맞춤
-phonology(음운론):언어가 소리를 배합하는 체계에 초점을 맞춤
-morphology(형태론):단어의 구조에 초점을 맞춤
-syntax(통사론):문법 구조에 초점을 맞춤
-semantics(의미론):문장 및 표현의 표면적 의미에 초점을 맞춤
-pragmatics(화용론):문장 및 표현의 맥락에 따른 의미에 초점을 맞춤.(ex.A:(시간약속 늦은 친구에게)너 지금 몇시인지 알아? B:미안미안, 다음부터 안 늦을게!)
+- phonetics(음성론):언어자체가 어떻게 들리는지에 초점을 맞춤
+- phonology(음운론):언어가 소리를 배합하는 체계에 초점을 맞춤
+- morphology(형태론):단어의 구조에 초점을 맞춤
+- syntax(통사론):문법 구조에 초점을 맞춤
+- semantics(의미론):문장 및 표현의 표면적 의미에 초점을 맞춤
+- pragmatics(화용론):문장 및 표현의 맥락에 따른 의미에 초점을 맞춤.(ex.A:(시간약속 늦은 친구에게)너 지금 몇시인지 알아? B:미안미안, 다음부터 안 늦을게!)
 
 In order to fully grasp the concept of language one must be aware of all these levels of language, which is exactly why NLP is a difficult field in computer sciences. The main problem is: how do you get a computer to understand these highly complex layers of language?(언어를 제대로 이해하기 위해서는, 언어의 모든단계를 이해해야 할 필요가 있다. 하지만, 문제가 하나 발생한다: 어떻게 컴퓨터한테 이 모든 단계를 이해하게 만들지?)
 Not only that, every language has its own set of unique rules. How can a computer learn these specific rules? These are some of the main tasks that the NLP field must tackle.(뿐만 아니라 모든 언어마다 각자 고유의 규칙이 있다. 어떻게 하면 컴퓨터가 이런 구체적인 규칙들을 배울 수 있는 것일까? 자연어처리 영역에서 이런 문제들을 주로 다루고 있다.)
