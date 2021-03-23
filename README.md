@@ -39,7 +39,7 @@ it is very difficult to tell what similarities or differences these embeddings h
 ### 2. Count Based Representation-Statistical Language Models(SLM), N-Grams, Bag of Words(BoW)(카운트 기반 표현기법-통계적 언어모델, N-Gram, BoW)
 - SLM: Models use conditional probability, mainly the words used before a target word.(통계적 언어모델들은 흔히 지정한 단어 이전에 오는 단어들바탕으로 조건부 확률을 활용하여 그 단어가 나올 확률을 측정한다.)
 
-![alt text](https://yqintl.alicdn.com/b52c26fcd63d66b48698decdcf1aad81ac8b5805.png)  
+![alt text](https://blog.feedly.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-06-at-11.57.13-AM.png)
 
 
 
