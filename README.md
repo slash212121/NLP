@@ -36,6 +36,10 @@ tiger = [0,1,0,0]
 ```
 it is very difficult to tell what similarities or differences these embeddings have.(원핫코딩의 치명적인 단점은, 1과 0만으로 구성되어 있기 때문에 단어간의 공통점, 차이점을 표현하기 매우 어렵다는 것이다. '고양이'와 '호랑이'는 생각해보면 고양이족인데다 생긴 것 또한 닮은 것들이 많아, 이런 단어간 유사함이 존재함에도, 단어의 인덱스에만 의존하여 벡터를 만들었기 떄문에 이런 내포되어 있는 정보를 표현하기 힘들다.)
 
+### 2. Count Based Representation-Statistical Language Models(SLM), N-Grams, Bag of Words(BoW)(카운트 기반 표현기법-통계적 언어모델, N-Gram, BoW)
+- SLM: Models use conditional probability, mainly the words used before a target word.(통계적 언어모델들은 흔히 지정한 단어 이전에 오는 단어들바탕으로 조건부 확률을 활용하여 그 단어가 나올 확률을 측정한다.)
+![alt text](https://yqintl.alicdn.com/b52c26fcd63d66b48698decdcf1aad81ac8b5805.png)
+
 
 
 
