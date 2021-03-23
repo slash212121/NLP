@@ -38,8 +38,13 @@ it is very difficult to tell what similarities or differences these embeddings h
 
 ### 2. Count Based Representation-Statistical Language Models(SLM), N-Grams, Bag of Words(BoW)(카운트 기반 표현기법-통계적 언어모델, N-Gram, BoW)
 - SLM: Models use conditional probability, mainly the words used before a target word.(통계적 언어모델들은 흔히 지정한 단어 이전에 오는 단어들바탕으로 조건부 확률을 활용하여 그 단어가 나올 확률을 측정한다.)
+- N-Grams: A variation of SLM. Instead of taking into consideration all the words that proceed a target word, it takes into account N-number of words. If it only takes into consideration of 1 word, it's considered a unigram, 2 words, a bigram, 3 words, a trigram and so on.(통계적 언어모델의 부류로, 지정단어를 선행하는 모든 단어들을 고려하지 않고, 선행하는 n개의 단어만 고려하게 된다. 몇개의 단어를 볼 것인지에 따라 unigram(1개), bigram(2개), trigram(3개) 등의 이름을 가지게 된다)
+
+While in theory this seems like a reasonable approach to understanding language, there exists its limitations. In order to understand the statistical probability of a certain word or phrase, that word or phrase must appear a significant amount of times. This means that an enormous amount of text is needed to analyze the distribution of these words. There is also a chance that a certain word or phrase may not appear frequently enough. This problem is known as the sparsity problem.(이런 통계적 모델들의 한계점은 특정 단어의 사용확률을 측정하기 위해서 학습되어야 할 텍스트 양이 방대해야 한다는 것이다. 그렇게 함에도 불구하고 모든 표현들의 확률적 사용법이 완전히 학습될 것이라는 보장 또한 없다. 이렇듯, 충분한 양의 데이터가 없어 특정 단어들의 배열 규칙을 학습하지 못하는 경우를 희소(sparsity problem)이라고 한다.)
 
 ![alt text](https://blog.feedly.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-06-at-11.57.13-AM.png)
+
+- Bag of Words(BoW): 
 
 
 
