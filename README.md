@@ -48,7 +48,7 @@ While in theory this seems like a reasonable approach to understanding language,
 
 ![alt text](https://www.researchgate.net/profile/Chrysoula-Themeli/publication/339076675/figure/fig1/AS:855585536897024@1580998896641/Bag-of-Words-example.ppm)
 
-Mainly these count based methods of encoding cannot fully grasp the true meanings in a text. These count based methods are mainly to check the relevant importance of certain words or phrases. Using methods like cosine similartiy or TF-IDF, these count based methods can be used to check the similarity of two or more texts or to check the importance of certain words or phrases.
+Like One-hot encoding, these count based methods of encoding cannot fully grasp the true meanings in a text. These count based methods are used to check the relevant importance of certain words or phrases. Using methods like cosine similartiy or TF-IDF, these count based methods can be used to check the similarity of two or more texts or to check the importance of certain words or phrases.
 
 
 
