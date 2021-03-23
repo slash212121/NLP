@@ -44,7 +44,9 @@ While in theory this seems like a reasonable approach to understanding language,
 
 ![alt text](https://blog.feedly.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-06-at-11.57.13-AM.png)
 
-- Bag of Words(BoW): 
+- Bag of Words(BoW): While SLM's take into consideration the sequence of words preceding a target word(thus the order of the words are very important), the BoW encoding method only takes into consideration the frequency of words in a corpus. Similar to One-hot encoding, each word is assigned an index and the frequency of each word is assigned to that index.
+
+![alt text](https://www.researchgate.net/profile/Chrysoula-Themeli/publication/339076675/figure/fig1/AS:855585536897024@1580998896641/Bag-of-Words-example.ppm)
 
 
 
