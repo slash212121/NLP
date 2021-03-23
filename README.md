@@ -44,9 +44,11 @@ While in theory this seems like a reasonable approach to understanding language,
 
 ![alt text](https://blog.feedly.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-06-at-11.57.13-AM.png)
 
-- Bag of Words(BoW): While SLM's take into consideration the sequence of words preceding a target word(thus the order of the words are very important), the BoW encoding method only takes into consideration the frequency of words in a corpus. Similar to One-hot encoding, each word is assigned an index and the frequency of each word is assigned to that index.
+- Bag of Words(BoW): While SLM's take into consideration the sequence of words preceding a target word(thus the order of the words are very important), the BoW encoding method only takes into consideration the frequency of words in a corpus. Similar to One-hot encoding, each word is assigned an index and the frequency of each word is assigned to that index.(BoW와 같은 경우 통계적기반 모델과는 조금 다르게, 단어들이 나열된 순서를 고려하는 것이 아니라 온전히 단어들이 출현하는 빈도를 바탕으로 인코딩하는 기법이다. 원핫 인코딩과 유사하게, 각각 단어마다 인덱스를 부여하여 단어가 출현하는 빈도수를 그 인덱스에 반영이 되는 인코딩 기법이다.
 
 ![alt text](https://www.researchgate.net/profile/Chrysoula-Themeli/publication/339076675/figure/fig1/AS:855585536897024@1580998896641/Bag-of-Words-example.ppm)
+
+Mainly these count based methods of encoding cannot fully grasp the true meanings in a text. These count based methods are mainly to check the relevant importance of certain words or phrases. Using methods like cosine similartiy or TF-IDF, these count based methods can be used to check the similarity of two or more texts or to check the importance of certain words or phrases.
 
 
 
