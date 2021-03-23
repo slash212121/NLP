@@ -35,8 +35,9 @@ cat = [0,0,1,0]
 tiger = [0,1,0,0]
 ```
 it is very difficult to tell what similarities or differences these embeddings have.(원핫코딩의 치명적인 단점은, 1과 0만으로 구성되어 있기 때문에 단어간의 공통점, 차이점을 표현하기 매우 어렵다는 것이다. '고양이'와 '호랑이'는 생각해보면 고양이족인데다 생긴 것 또한 닮은 것들이 많아, 이런 단어간 유사함이 존재함에도, 단어의 인덱스에만 의존하여 벡터를 만들었기 떄문에 이런 내포되어 있는 정보를 표현하기 힘들다.)
+- One-hot encoding itself may not be able to capture the meaning and contextual usage of words, but it is the foundation for vector representation of words, or to elaborate, Word2Vec. 
 
-### 2. Count Based Representation-Statistical Language Models(SLM), N-Grams, Bag of Words(BoW)(카운트 기반 표현기법-통계적 언어모델, N-Gram, BoW)
+### 2. Count Based Representation-Bag of Words(BoW)(카운트 기반 표현기법-BoW)
 - SLM: Models use conditional probability, mainly the words used before a target word.(통계적 언어모델들은 흔히 지정한 단어 이전에 오는 단어들바탕으로 조건부 확률을 활용하여 그 단어가 나올 확률을 측정한다.)
 - N-Grams: A variation of SLM. Instead of taking into consideration all the words that proceed a target word, it takes into account N-number of words. If it only takes into consideration of 1 word, it's considered a unigram, 2 words, a bigram, 3 words, a trigram and so on.(통계적 언어모델의 부류로, 지정단어를 선행하는 모든 단어들을 고려하지 않고, 선행하는 n개의 단어만 고려하게 된다. 몇개의 단어를 볼 것인지에 따라 unigram(1개), bigram(2개), trigram(3개) 등의 이름을 가지게 된다)
 
@@ -48,7 +49,9 @@ While in theory this seems like a reasonable approach to understanding language,
 
 ![alt text](https://www.researchgate.net/profile/Chrysoula-Themeli/publication/339076675/figure/fig1/AS:855585536897024@1580998896641/Bag-of-Words-example.ppm)
 
-Like One-hot encoding, these count based methods of encoding cannot fully grasp the true meanings in a text. These count based methods are used to check the relevant importance of certain words or phrases. Using methods like cosine similartiy or TF-IDF, these count based methods can be used to check the similarity of two or more texts or to check the importance of certain words or phrases.
+Like One-hot encoding, these count based methods of encoding cannot fully grasp the true meanings in a text. These count based methods are used to check the relevant importance of certain words or phrases. Using methods like cosine similartiy or TF-IDF, these count based methods can be used to check the similarity of two or more texts or to check the importance of certain words or phrases.(원핫인코딩과 비슷하게, 이런 카운트 기반의 모델이나 인코딩 기법들은 텍스트 내의 단어들의 의미를 완전히 담아내기에는 역부족이다. 하지만 이런 기법들은 문서간의 유사도 혹은 문서 내의 단어의 중요도를 파악하는데에 용이한 점이 있다.)
+
+### 3.Word2Vec:Statistical Language Models(SLM), N-Grams,  
 
 
 
