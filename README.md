@@ -38,12 +38,6 @@ it is very difficult to tell what similarities or differences these embeddings h
 - One-hot encoding itself may not be able to capture the meaning and contextual usage of words, but it is the foundation for vector representation of words, or to elaborate, Word2Vec. 
 
 ### 2. Count Based Representation-Bag of Words(BoW)(카운트 기반 표현기법-BoW)
-- SLM: Models use conditional probability, mainly the words used before a target word.(통계적 언어모델들은 흔히 지정한 단어 이전에 오는 단어들바탕으로 조건부 확률을 활용하여 그 단어가 나올 확률을 측정한다.)
-- N-Grams: A variation of SLM. Instead of taking into consideration all the words that proceed a target word, it takes into account N-number of words. If it only takes into consideration of 1 word, it's considered a unigram, 2 words, a bigram, 3 words, a trigram and so on.(통계적 언어모델의 부류로, 지정단어를 선행하는 모든 단어들을 고려하지 않고, 선행하는 n개의 단어만 고려하게 된다. 몇개의 단어를 볼 것인지에 따라 unigram(1개), bigram(2개), trigram(3개) 등의 이름을 가지게 된다)
-
-While in theory this seems like a reasonable approach to understanding language, there exists its limitations. In order to understand the statistical probability of a certain word or phrase, that word or phrase must appear a significant amount of times. This means that an enormous amount of text is needed to analyze the distribution of these words. There is also a chance that a certain word or phrase may not appear frequently enough. This problem is known as the sparsity problem.(이런 통계적 모델들의 한계점은 특정 단어의 사용확률을 측정하기 위해서 학습되어야 할 텍스트 양이 방대해야 한다는 것이다. 그렇게 함에도 불구하고 모든 표현들의 확률적 사용법이 완전히 학습될 것이라는 보장 또한 없다. 이렇듯, 충분한 양의 데이터가 없어 특정 단어들의 배열 규칙을 학습하지 못하는 경우를 희소(sparsity problem)이라고 한다.)
-
-![alt text](https://blog.feedly.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-06-at-11.57.13-AM.png)
 
 - Bag of Words(BoW): While SLM's take into consideration the sequence of words preceding a target word(thus the order of the words are very important), the BoW encoding method only takes into consideration the frequency of words in a corpus. Similar to One-hot encoding, each word is assigned an index and the frequency of each word is assigned to that index.(BoW와 같은 경우 통계적기반 모델과는 조금 다르게, 단어들이 나열된 순서를 고려하는 것이 아니라 온전히 단어들이 출현하는 빈도를 바탕으로 인코딩하는 기법이다. 원핫 인코딩과 유사하게, 각각 단어마다 인덱스를 부여하여 단어가 출현하는 빈도수를 그 인덱스에 반영이 되는 인코딩 기법이다.
 
@@ -51,7 +45,14 @@ While in theory this seems like a reasonable approach to understanding language,
 
 Like One-hot encoding, these count based methods of encoding cannot fully grasp the true meanings in a text. These count based methods are used to check the relevant importance of certain words or phrases. Using methods like cosine similartiy or TF-IDF, these count based methods can be used to check the similarity of two or more texts or to check the importance of certain words or phrases.(원핫인코딩과 비슷하게, 이런 카운트 기반의 모델이나 인코딩 기법들은 텍스트 내의 단어들의 의미를 완전히 담아내기에는 역부족이다. 하지만 이런 기법들은 문서간의 유사도 혹은 문서 내의 단어의 중요도를 파악하는데에 용이한 점이 있다.)
 
-### 3.Word2Vec:Statistical Language Models(SLM), N-Grams,  
+### 3.Word2Vec:Statistical Language Models(SLM), N-Grams
+- SLM: Models use conditional probability, mainly the words used before a target word.(통계적 언어모델들은 흔히 지정한 단어 이전에 오는 단어들바탕으로 조건부 확률을 활용하여 그 단어가 나올 확률을 측정한다.)
+- N-Grams: A variation of SLM. Instead of taking into consideration all the words that proceed a target word, it takes into account N-number of words. If it only takes into consideration of 1 word, it's considered a unigram, 2 words, a bigram, 3 words, a trigram and so on.(통계적 언어모델의 부류로, 지정단어를 선행하는 모든 단어들을 고려하지 않고, 선행하는 n개의 단어만 고려하게 된다. 몇개의 단어를 볼 것인지에 따라 unigram(1개), bigram(2개), trigram(3개) 등의 이름을 가지게 된다)
+
+While in theory this seems like a reasonable approach to understanding language, there exists its limitations. In order to understand the statistical probability of a certain word or phrase, that word or phrase must appear a significant amount of times. This means that an enormous amount of text is needed to analyze the distribution of these words. There is also a chance that a certain word or phrase may not appear frequently enough. This problem is known as the sparsity problem.(이런 통계적 모델들의 한계점은 특정 단어의 사용확률을 측정하기 위해서 학습되어야 할 텍스트 양이 방대해야 한다는 것이다. 그렇게 함에도 불구하고 모든 표현들의 확률적 사용법이 완전히 학습될 것이라는 보장 또한 없다. 이렇듯, 충분한 양의 데이터가 없어 특정 단어들의 배열 규칙을 학습하지 못하는 경우를 희소(sparsity problem)이라고 한다.)
+
+![alt text](https://blog.feedly.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-06-at-11.57.13-AM.png)
+
 
 
 
