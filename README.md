@@ -62,8 +62,8 @@ While in theory this seems like a reasonable approach to understanding language,
 
 There are two main approaches to the Word2Vec representation. CBOW(Continuos Bag of Words) and Skip-Gram
 
-  - CBOW: Uses surrounding words to predict target word
-  - Skip-Gram: Uses target word to predict the surrounding words
+  - CBOW: Uses surrounding words to predict target word. Faster to train, works better for frequent words.
+  - Skip-Gram: Uses target word to predict the surrounding words. Comparitively more accurate, can be used on smaller dataset.
 
 The main way Word2Vec optimized is by minimizing the following objective function.
 
@@ -73,7 +73,7 @@ The finaly predictions are made upon passing the context words along with the ta
 
 ![alt text](https://miro.medium.com/max/500/1*xVgIZm8-XySBhTVhQ4ODRQ.png)
 
-
+While this way of encoding words into vector representations is a huge step forward, there still exists problems: This model still takes up a lot of computing power. This is mainly caused by the way this model is trained. Since this model makes a vector representation by going through every word in this dataset, training takes up a long time. 
 
 
 
