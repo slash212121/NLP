@@ -1,5 +1,6 @@
 # NLP
-Main concepts of NLP and how to implement them
+Main concepts of NLP and how to implement them.
+Take note that this is a review on NLP and takes inspiration from Stanfords CS224 by Professor Christopher Manning.
 
 ## Word Meaning Representation and Encoding(단어의미 표현 및 인코딩)
 - Language has several layers to analyze, and thus is highly complex.(언어는 다양한 단계및 측면에서 분석하여야 하기 때문에, 상당히 복잡한 영역이다)
@@ -63,6 +64,14 @@ There are two main approaches to the Word2Vec representation. CBOW(Continuos Bag
 
   - CBOW: Uses surrounding words to predict target word
   - Skip-Gram: Uses target word to predict the surrounding words
+
+The main way Word2Vec optimized is by minimizing the following objective function.
+
+![alt text](https://miro.medium.com/max/500/1*sKjTpIbaIz6kax0MU_ASig.png)
+
+The finaly predictions are made upon passing the context words along with the target words into a softmax function and comparing the results to the actual one-hot encoding.
+
+![alt text](https://miro.medium.com/max/500/1*xVgIZm8-XySBhTVhQ4ODRQ.png)
 
 
 
