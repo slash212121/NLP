@@ -75,6 +75,8 @@ The finaly predictions are made upon passing the context words along with the ta
 
 While this way of encoding words into vector representations is a huge step forward, there still exists problems: This model still takes up a lot of computing power. This is mainly caused by the way this model is trained. Since this model makes a vector representation by going through every word in this dataset, training takes up a long time. 
 
+So the Word2Vec method incorporates two methods to speed up the training process. Negative sampling and Heirarchical Soft-Max. 
+
 
 
 
