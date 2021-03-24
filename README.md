@@ -57,6 +57,14 @@ While in theory this seems like a reasonable approach to understanding language,
 
 ![alt text](https://www.researchgate.net/profile/Giuseppe-Futia/publication/328373466/figure/fig3/AS:701226521997316@1544196839385/Architecture-of-Word2Vec-models-CBOW-and-Skip-Gram.ppm)
 
+There are two main approaches to the Word2Vec representation. CBOW(Continuos Bag of Words) and Skip-Gram
+
+  - CBOW: Uses surrounding words to predict target word
+  - Skip-Gram: Uses target word to predict the surrounding words
+
+
+
+
 
 
 
