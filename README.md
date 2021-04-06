@@ -2,6 +2,8 @@
 Main concepts of NLP and how to implement them.
 Take note that this is a review on NLP and takes inspiration from Stanfords CS224 by Professor Christopher Manning.
 
+- BERT-for-Sentiment-Analysis_PromisedNeverland.ipynb is a modified version of Chris Tran's "Fine Tuning BERT for Sentiment Analysis" using my own data. Take a look at his portfolio at https://chriskhanhtran.github.io/about/!
+
 ## Word Meaning Representation and Encoding(단어의미 표현 및 인코딩)
 - Language has several layers to analyze, and thus is highly complex.(언어는 다양한 단계및 측면에서 분석하여야 하기 때문에, 상당히 복잡한 영역이다)
 
