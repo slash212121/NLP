@@ -92,6 +92,11 @@ How are the negative words sampled then? By using a method called "unigram distr
 ![alt text](https://ruder.io/content/images/2016/06/hierarchical_softmax_example.png)
 
 
+### 4. RNN, LSTM, GRU: Embedding on sequential data.
+
+
+
+
 
 
 
