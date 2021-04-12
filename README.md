@@ -79,6 +79,7 @@ While this way of encoding words into vector representations is a huge step forw
 
 So the Word2Vec method incorporates two methods to speed up the training process. Negative sampling and Heirarchical Soft-Max. 
 
+- Negative Sampling: Ideally, when training a neural model, all of the weights of the model should be updated. However due to computational problems, the Negative sampling technique is implemented by training a small percentage of the weights, rather than all of them. In order to understand the way this is accomplished, it is important to recall one-hot embeddings. The outputs of the labeled word pairings are represented as one-hot vectors. The correct outputs are encoded as 1's and the rest 0. During the training process of the neural network, the weights for all the wrong outputs along with the representation for the right output are adjusted. With negative sampling however,  
 
 
 
