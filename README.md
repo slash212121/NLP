@@ -79,7 +79,21 @@ While this way of encoding words into vector representations is a huge step forw
 
 So the Word2Vec method incorporates two methods to speed up the training process. Negative sampling and Heirarchical Soft-Max. 
 
-- Negative Sampling: Ideally, when training a neural model, all of the weights of the model should be updated. However due to computational problems, the Negative sampling technique is implemented by training a small percentage of the weights, rather than all of them. In order to understand the way this is accomplished, it is important to recall one-hot embeddings. The outputs of the labeled word pairings are represented as one-hot vectors. The correct outputs are encoded as 1's and the rest 0. During the training process of the neural network, the weights for all the wrong outputs along with the representation for the right output are adjusted. With negative sampling however,  
+- Negative Sampling: Ideally, when training a neural model, all of the weights of the model should be updated. However due to computational problems, the Negative sampling technique is implemented by training a small percentage of the weights, rather than all of them. In order to understand the way this is accomplished, it is important to recall one-hot embeddings. The outputs of the labeled word pairings in the output layer are represented as one-hot vectors. The correct outputs are encoded as 1's and the rest 0. During the training process of the neural network, the weights for all the wrong outputs along with the representation for the right output are adjusted. With negative sampling however, only the weights for a small proportion of "negative" words(words that are represented as 0) are adjusted along with the correct representation. Since only a small proportion of the weights are adjusted, the computation time is reduced.
+
+![alt text](https://aegis4048.github.io/jupyter_images/neg_vs_skip.png)
+
+How are the negative words sampled then? By using a method called "unigram distribution", the words that appear more frequently in a corpus are more likely to be sampled. The frequency of a certain word is divided by the the entire size of the corpus. In the adjusted sampling, the frequency is raised to the power of 3/4. This ultimately penalizes frequent words and rewards the sparsely appearing words. 
+
+![alt text](https://miro.medium.com/max/700/1*AH2nhhgon6ca8d_6TflGEA.png)
+
+- Heirarchical Soft-Max: This section is a part where I need to understand data structures better, but to sum up switching the final soft max layer to a heirarchical soft max structure(a binary tree structure) speeds up the computational time.
+
+![alt text](https://ruder.io/content/images/2016/06/hierarchical_softmax_example.png)
+
+
+
+
 
 
 
