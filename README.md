@@ -100,6 +100,14 @@ Up until this point, we've found a way to use neural networks to map out the wor
 
 ![alt text](https://miro.medium.com/max/700/1*biau76XDRvQG-yWARY-lLg.png)
 
+The basic structure of a vanilla RNN is like the above. For every time stamp in a sequential data structure the previous time stamps are taken into consideration when embedding the current time stamp. This process procedes until every time sequence is embedded. When put into the context of text data, which can be viewd as sequential data, the information from all previous words are put into consideration when embedding the current word. 
+
+Take for example, the sentence, "I am a college student". First, the word "I" is embedded. It passes a random weight, and then a certain amount of bias is added. The embedding then passes an activation function(usually tanh) and then this information is passed on to the next word in this sequence, "am". The model takes the embedding of "I", multiplies a certain weight and then adds this value to the newly embedded "am"(this embedding passed through the same weight as the previous time stamp). The bias is taken into account and added and like the previous word "I" this value is passed on to the activation function again. This process repeats until "student" is embedded. 
+
+The optimization of this model is done by minimizing the sum of the differences between the predicted values of each time stamp(in this case the predicted words in the sentence) and the actual result this process is done by gradient descent. In the case of sentiment analysis, the data is labled in either negative or positive. The embedding of the final time stamp in a sequence is passed on to a classification layer, in this case a soft-max layer, and produces a prediction of whether the sentiment of the sequence is true or false. This is compared with the actual labelling of the word(usually labled 0 for negative, 1 for positive) and the aim is to minimize the loss. 
+
+The reason why this architecture is called a Recurrent Neural Network is because instead of passing through a feed forward network(FNN), the weights are applied with each time stamp in a sequence in a repeating manner. Unlike a FNN where different weights are applied with each layer and backpropogation happens with at the end of the passing of a dataset, an RNN uses one set of weights that is optimized with each time stamp. Thus the model is set to work in a cycling manner.  
+
 
 
 
