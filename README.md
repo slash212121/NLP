@@ -94,6 +94,12 @@ How are the negative words sampled then? By using a method called "unigram distr
 
 ### 4. RNN, LSTM, GRU: Embedding on sequential data.
 
+Up until this point, we've found a way to use neural networks to map out the words from long text using the context words surrounding a target word. This is mainly known as the Word2vec method using either CBOW or Skip-Gram. However this method holds limitations to what it can represent. Since the model only takes into account a fixed number of window words surrounding a target word, it cannont contextualize long term dependencies of words in longer sequences. This is where RNN's(Reccurrent Neural Networks) come into play. 
+
+![alt text](https://miro.medium.com/max/700/1*SKGAqkVVzT6co-sZ29ze-g.png)
+
+![alt text](https://miro.medium.com/max/700/1*biau76XDRvQG-yWARY-lLg.png)
+
 
 
 
